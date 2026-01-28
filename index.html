@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>MediCare+: Home</title>
+	<link rel="icon" type="image/png" href="assets\images\e7.webp">
+	<style>
+		body {
+			font-size: 120%;
+			background-image: radial-gradient(circle, white, lightblue, white);
+		}
+
+		header {
+			display: flex;
+			font-family: Algerian;
+			padding: 5px;
+
+			justify-content: space-between;
+			border-bottom: 2px solid black;
+		}
+
+		h1 {
+			color: darkcyan;
+			display: flex;
+			align-items: center;
+			gap: 5px;
+
+		}
+
+		header img {
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+		li {
+			display: inline;
+		}
+
+		li a:hover {
+			background-color: #111;
+			color: white;
+			text-decoration: underline;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+			padding: 10px;
+		}
+
+		div li {
+			display: list-item;
+			padding-top: 20px;
+		}
+
+		div {
+			border-right: 2px solid black;
+			border-bottom: 2px solid black;
+		}
+
+		div ul {
+			list-style-type: square;
+		}
+
+		h2 {
+			text-align: center;
+			font-family: Lucida Calligraphy;
+		}
+
+		button {
+			padding: 5px;
+			background-color: black;
+			color: white;
+			font-family: Algerian;
+			font-size: 108%;
+		}
+
+		button:hover {
+			background-color: white;
+			color: black;
+		}
+
+		p {
+			font-size: 120%;
+		}
+
+		ol {
+			font-size: 110%;
+		}
+
+		.container {
+			height: 1000px;
+		}
+
+		.sidebar {
+
+			border-right: 2px solid black;
+			height: 100vh;
+			position: sticky;
+			top: 0;
+			overflow-y: unset;
+			font-family: Algerian;
+		}
+
+		label,
+		input {
+			padding: 0px;
+			margin: 0px;
+			width: 200px;
+			height: 25px;
+			border-radius: 20px;
+		}
+
+		hr {
+			height: 10px;
+			background-color: white;
+		}
+
+		.flip-card {
+			background-color: transparent;
+			width: 200px;
+			height: 200px;
+			border: 1px solid #f1f1f1;
+			perspective: 1000px;
+			padding: 10px;
+		}
+
+		.flip-card-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			transition: transform 0.8s;
+			transform-style: preserve-3d;
+		}
+
+		.flip-card:hover .flip-card-inner {
+			transform: rotateY(180deg);
+		}
+
+		.flip-card-front,
+		.flip-card-back {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+
+		.flip-card-front {
+			background-color: #bbb;
+			color: black;
+		}
+
+		.flip-card-back {
+			color: black;
+			font-family: Algerian;
+			transform: rotateY(180deg);
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1><img src="D:\HTML\MediCare+\Assets\Images\e7.webp" width="50" height="50"><u>Medicare+</u></h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="public\about.html">About Us</a></li>
+			<li><a href="public\services.html">Services</a></li>
+			<li><a href="public\contact.html">Contact Us</a></li>
+		</ul>
+	</header>
+	<div style="display:grid;grid-template-columns:15% 85%">
+		<div class="sidebar">
+			<ul>
+				<li><a href="#abt">About</a></li>
+				<li><a href="#kf">Key Features</a></li>
+				<li><a href="#s">Services</a></li>
+			</ul>
+		</div>
+		<div style="padding:10px">
+			<p style="text-align: right;font-family: Algerian;font-size: 80%;">
+				<input type="text" id="search" name="search" placeholder="     Search for our services">
+				<button type="submit" style="font-size: 90%;border-radius: 15px;">Submit</button>
+			</p>
+			<marquee loop="1" scrollamount="15" behavior="slide">
+				<h2 style="font-family:Algerian;text-decoration:underline">Empowering your health journey with trusted
+					care.</h2>
+			</marquee>
+			<center>
+				<p>Your health is our priority. Connecting you with experts in minutes.</p>
+				<a href="public\Appointment.html"><button>Book An Appointment</button></a>
+			</center>
+			<hr>
+			<h2 id="abt">About Medicare+</h2>
+			<p>At Medicare+, we bring state-of-the-art healthcare facilities and personalized care to your fingertips.
+				With experienced professionals and advanced technology, we strive to ensure your well-being every step
+				of the way.</p>
+			<p>Your one-stop solution for all healthcare needs. Book appointments, access medical records, and consult
+				top professionals all in one place.</p>
+			<p><b>Explore our services and make your health a priority!</b></p>
+			<br>
+			<h2 id="kf">Our Key Features</h2>
+			<ol type="I">
+				<li><b>24/7 Consultation:</b> Talk to a doctor anytime, anywhere.<img src="assets\images\e75.png" width="200"
+						height="200" style="float:right;padding:10px"></li>
+				<li><b>Expert Specialists:</b> Access to highly qualified professionals.</li>
+				<li><b>Advanced Facilities:</b> Cutting-edge medical equipment.</li>
+				<li><b>Affordable Packages:</b> Cost-effective health solutions.</li>
+			</ol>
+			<br>
+			<center>
+			<h2 id="s">Our Services</h2>
+			<div style="display: grid;grid-template-columns: 33% 33% 33%;border: none;">
+				<div class="flip-card" style="border:none;">
+					<div class="flip-card-inner" style="border:none">
+						<div class="flip-card-front" style="border:none">
+							<img src="assets\images\e72.jpg" width="200" height="200">
+						</div>
+						<div class="flip-card-back" style="border:none">
+							<p>General Checkup</p>
+						</div>
+					</div>
+				</div>
+				<div class="flip-card" style="border:none;">
+					<div class="flip-card-inner" style="border:none">
+						<div class="flip-card-front" style="border:none">
+							<img src="assets\images\e73.jpg" width="200" height="200">
+						</div>
+						<div class="flip-card-back" style="border:none">
+							<p>Online Consultations</p>
+						</div>
+					</div>
+				</div>
+				<div class="flip-card" style="border:none;">
+					<div class="flip-card-inner" style="border: none;">
+						<div class="flip-card-front" style="border:none">
+							<img src="assets\images\e74.jpeg" width="200" height="200">
+						</div>
+						<div class="flip-card-back" style="border:none">
+							<p>Emergency Services</p>
+						</div>
+					</div>
+				</div>
+			</center>
+			</div>
+		</div>
+	</div>
+	</div>
+		<center>
+		<footer>
+			<p>&copy; 2024 Medicare+ || All rights reserved.</p>
+		</footer>
+	</center>
+</body>
+
+</html>

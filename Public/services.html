@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Medicare+: Services</title>
+    <link rel="icon" type="image/png" href="..\assets\images\e7.webp">
+    <style>
+        body{
+            font-size: 120%;
+        }
+        .services {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: radial-gradient(circle, white, lightblue, white);
+        }
+
+        .services h1 {
+            text-align: center;
+        }
+
+        .services p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .service-category {
+            margin-bottom: 30px;
+        }
+
+        .service-category h2 {
+            color: #0044cc;
+            border-bottom: 2px solid #0044cc;
+            padding-bottom: 10px;
+        }
+
+        .service-category ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+
+        header {
+            display: flex;
+            font-family: Algerian;
+            padding: 5px;
+            background-image: radial-gradient(circle,  lightblue, white);
+            justify-content: space-between;
+            border-bottom: 2px solid black;
+        }
+
+        h1 {
+            color: darkcyan;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        header img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        header ul li {
+            display: inline;
+        }
+
+        li a:hover {
+            background-color: #111;
+            color: white;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        div li {
+            display: list-item;
+            padding-top: 20px;
+        }
+
+        div {
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        div ul {
+            list-style-type: square;
+        }
+        .sidebar {
+            background-image: radial-gradient(circle, white, lightblue, white);
+            border-right: 2px solid black;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            overflow-y: unset;
+        }
+        .service-description img:hover{
+            height: 30vh;
+            width: 50vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><img src="..\assets\images\e7.webp" width="50" height="50"><u>Medicare+</u></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="display:grid;grid-template-columns:15% 85%">
+        <div class="sidebar" style="background-color:#f4f4f4">
+            <h4>Our Comprehensive Services</h4>
+            <ul>
+                <li><a href="#c">Cardiology</a></li>
+                <li><a href="#p">Pediatrics</a></li>
+                <li><a href="#g">General Medicine</a></li>
+            </ul>
+        </div>
+        <main>
+            <section class="services">
+                <h1>Our Comprehensive Services</h1>
+                <p>We offer a wide range of medical services to cater to your health needs. Our team of experienced
+                    professionals is dedicated to providing top-quality care for our patients.</p>
+
+                <div class="service-category" style="border-right: none;">
+                    <h2 id="c">Cardiology</h2>
+                    <div class="service-description" style="border-right: none;">
+                        <img src="..\assets\images\cardiology.jpg" height="200" alt="Cardiology">
+                        <div style="border-right: none;">
+                            <p>Our cardiology department provides comprehensive heart care services, including
+                                diagnosis, treatment, and prevention of heart diseases. We offer:</p>
+                            <ul>
+                                <li>Heart Health Assessments</li>
+                                <li>Electrocardiograms (ECGs)</li>
+                                <li>Cardiac Stress Tests</li>
+                                <li>Interventional Cardiology</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category" style="border-right: none;">
+                    <h2 id="p">Pediatrics</h2>
+                    <div class="service-description" style="border-right: none;">
+                        <img src="..\assets\images\pediatrics.jpeg" height="200" width="300" alt="Pediatrics">
+                        <div style="border-right: none;">
+                            <p>Our pediatricians offer quality healthcare for children from infancy through adolescence.
+                                Our services include:</p>
+                            <ul>
+                                <li>Well-child Visits</li>
+                                <li>Vaccinations and Immunizations</li>
+                                <li>Developmental Screenings</li>
+                                <li>Pediatric Emergency Care</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category" style="border-right: none;">
+                    <h2 id="g">General Medicine</h2>
+                    <div class="service-description" style="border-right: none;">
+                        <img src="..\assets\images\general_medicine.jpg" height="200" alt="General Medicine">
+                        <div style="border-right: none;">
+                            <p>Our general medicine team provides a broad range of services to address common health
+                                issues and chronic conditions. We specialize in:</p>
+                            <ul>
+                                <li>Routine Check-ups</li>
+                                <li>Chronic Disease Management</li>
+                                <li>Preventive Care</li>
+                                <li>Health Screenings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+    </main>
+    <footer>
+        <p>Contact us: +91 89895xxxxx | Email: info@medicare-plus.com</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="..\assets\images\f.png" alt="Facebook"></a>
+            <a href="https://x.com/"><img src="..\assets\images\x.png" width="30" height="30" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

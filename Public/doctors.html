@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MediCare+: Appointment</title>
+    <link rel="icon" type="image/png" href="..\assets\images\e7.webp">
+    <style>
+        body {
+            background-image: radial-gradient(circle, white, lightblue,white);
+        }
+
+        header {
+            font-size: 120%;
+            display: flex;
+            font-family: Algerian;
+            padding: 5px;
+            justify-content: space-between;
+            border-bottom: 2px solid black;
+        }
+
+        h1 {
+            color: Black;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        header img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a:hover {
+            background-color: #111;
+            color: white;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Lucida Calligraphy;
+        }
+
+        button {
+            padding: 5px;
+            background-color: black;
+            color: white;
+            font-family: Algerian;
+            font-size: 108%;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        ol,p {
+            font-size: 120%;
+        }
+
+        .contact {
+            
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 100px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: radial-gradient(circle, white, lightblue);
+            max-width: auto;
+            align-self: center;
+        }
+
+        .contact h1,p,img {
+            text-align: center;
+        }
+
+        .contact span{
+            float: left;
+        }
+    
+        button {
+            padding: 10px 20px;
+            background-color: #0044cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        section ul {
+            list-style-type: square;
+        }
+
+        section li {
+            display: list-item;
+            padding-top: 20px;
+        }
+
+        .sidebar {
+            border-right: 2px solid black;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            overflow-y: unset;
+            font-family: Algerian;
+        }
+
+        .sidebar li {
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><img src="..\assets\images\e7.webp" width="50" height="50"><u>Medicare+</u></h1>
+        <nav>
+            <ul>
+                <li><a href="..\index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div style="display:grid;grid-template-columns:17% 83%">
+            <section class="sidebar">
+                <ul>
+                    <li><a href="Appointment.html">Appointment</a></li>
+                </ul>
+            </section>
+            <section class="contact">
+                <p id="abt" style="font-size: 200%;font-family: Lucida Calligraphy;"><b>Choose A Specialist</b></p>
+                <div style="display: grid;grid-template-columns: 50% 50%">    
+                    <div>
+                    <a href="new.html" target="_self"><img src="..\assets\images\d1.png" width="200" height="200" style="border-radius: 50%;"></a>
+                    <span><p>Dr. Shyam<br>Chief Medical Officer</p></span>
+                    </div>
+                    <div>
+                    <a href="new.html" target="_self"><img src="..\assets\images\d2.jpeg" width="200" height="200" style="border-radius: 50%;"></a>
+                    <span><p>Dr. Jane<br>Pediatrician</p></span>
+                    </div>
+                    <div>
+                    <a href="new.html" target="_self"><img src="..\assets\images\d3.avif" width="200" height="200" style="border-radius: 50%;"></a>
+                    <span><p>Dr. Ram<br>General Physician</p></span>
+                </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Medicare+ || All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

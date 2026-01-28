@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MediCare+: Appointment</title>
+    <link rel="icon" type="image/png" href="..\Assets\Images\e7.webp">
+    <style>
+        body {
+            font-size: 120%;
+            background-image: radial-gradient(circle, white, lightblue,white);
+        }
+
+        header {
+            display: flex;
+            font-family: Algerian;
+            padding: 5px;
+            justify-content: space-between;
+            border-bottom: 2px solid black;
+        }
+
+        h1 {
+            color: Black;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        header img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a:hover {
+            background-color: #111;
+            color: white;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Lucida Calligraphy;
+        }
+
+        button {
+            padding: 5px;
+            background-color: black;
+            color: white;
+            font-family: Algerian;
+            font-size: 108%;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        p {
+            font-size: 120%;
+        }
+
+        ol {
+            font-size: 110%;
+        }
+
+        section {
+            max-width: 1000px;
+        }
+
+        .contact {
+            justify-self: center;
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 100px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: radial-gradient(circle, white, lightblue);
+
+        }
+
+        .contact h1 {
+            text-align: center;
+        }
+
+        .contact p {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0044cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightblue;
+        }
+
+        .map {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        section ul {
+            list-style-type: square;
+        }
+
+        section li {
+            display: list-item;
+            padding-top: 20px;
+        }
+
+        .sidebar {
+            border-right: 2px solid black;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            overflow-y: unset;
+            font-family: Algerian;
+        }
+
+        .sidebar li {
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><img src="..\Assets\Images\e7.webp" width="50" height="50"><u>Medicare+</u></h1>
+        <nav>
+            <ul>
+                <li><a href="..\index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div style="display:grid;grid-template-columns:17% 83%">
+            <section class="sidebar">
+                <ul>
+                    <li><a href="#abt">Appointment</a></li>
+                    <li><a href="#loc">Our Location</a></li>
+                </ul>
+            </section>
+            <section  class="contact">
+                <p id="abt" style="font-size: 200%;font-family: Lucida Calligraphy;"><b>Book An Appointment</b></p>
+                <p>We are here to assist you with any questions or concerns you may have. Please fill out the form
+                    below,
+                    and a member of our team will get back to you shortly.</p>
+                <form action="doctors.html" target="_self" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <center>
+                       <button type="submit">Choose a Doctor</button>
+                    </center>
+                </form>
+                
+                <hr>
+                <hr>
+                <h2 id="loc">Our Location</h2>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8084.904589893236!2d75.9676972972044!3d27.17553934787323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1732459190989!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <hr>
+                <hr>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Medicare+ || All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
